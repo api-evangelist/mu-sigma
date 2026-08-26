@@ -1,0 +1,22 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.mu-sigma.com/ (full page sitemap walked 2026-08-26; no pricing or plans page exists)
+plan_count: 0
+plans: []
+note: >-
+  Mu Sigma publishes no plans, tiers or prices of any kind. It sells consulting engagements and a
+  "Continuous Service as a Software" operating model to enterprise buyers, and the only commercial
+  entry points on the site are the client-queries and HR-queries contact forms. Every page in
+  https://www.mu-sigma.com/page-sitemap.xml was enumerated and no pricing, plans, packages or
+  editions page is among them; /pricing, /pricing/ and /plans all resolve to the homepage via the
+  WordPress catch-all (HTTP 200, soft-404).
+evidence:
+- url: https://www.mu-sigma.com/pricing/
+  status: 200
+  outcome: soft-404 (served the homepage)
+- url: https://www.mu-sigma.com/page-sitemap.xml
+  status: 200
+  outcome: 41 pages enumerated, none commercial
+- url: https://www.mu-sigma.com/client-queries/
+  status: 200
+  outcome: contact form; the only route to a commercial conversation

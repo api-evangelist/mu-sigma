@@ -1,0 +1,89 @@
+generated: '2026-08-26'
+method: searched
+source: https://github.com/Mu-Sigma + https://cran.r-project.org (crandb.r-pkg.org metadata)
+note: >-
+  Mu Sigma publishes no API client SDKs, because it publishes no public API. What it does publish
+  first-party are open-source R packages for decision science and analytics, authored and maintained
+  from mu-sigma.com email addresses on the github.com/Mu-Sigma organization and released to CRAN.
+  They are recorded here as first-party packages, NOT as API SDKs — none of them wraps a Mu Sigma
+  service endpoint, and no `SDKs` pointer is emitted in apis.yml for that reason.
+organization: https://github.com/Mu-Sigma
+packages:
+- name: HVT
+  registry: cran
+  language: R
+  official: true
+  url: https://cran.r-project.org/package=HVT
+  repository: https://github.com/Mu-Sigma/HVT
+  version: 26.1.3
+  published: '2026-04-29'
+  maintainer: Zubin Dowlaty <zubin.dowlaty@mu-sigma.com>
+  sdk: false
+  description: >-
+    Constructing hierarchical Voronoi tessellations for a given data set and overlaying heatmaps for
+    exploratory data analysis. The actively maintained successor to muHVT.
+- name: muHVT
+  registry: cran
+  language: R
+  official: true
+  url: https://cran.r-project.org/package=muHVT
+  repository: https://github.com/Mu-Sigma/muHVT
+  version: 3.0.0
+  published: '2023-03-03'
+  maintainer: Mu Sigma, Inc. <ird.experiencelab@mu-sigma.com>
+  sdk: false
+  status: superseded
+  description: Hierarchical Voronoi tessellation package, superseded by HVT.
+- name: analysisPipelines
+  registry: cran
+  language: R
+  official: true
+  url: https://cran.r-project.org/package=analysisPipelines
+  repository: https://github.com/Mu-Sigma/analysis-pipelines
+  version: 1.0.2
+  published: '2020-06-12'
+  maintainer: Mu Sigma, Inc. <ird.experiencelab@mu-sigma.com>
+  sdk: false
+  description: >-
+    Compose pipelines of analysis consisting of data manipulation, machine-learning and
+    visualization functions, across R, Spark and Python engines.
+- name: RImpala
+  registry: cran
+  language: R
+  official: true
+  url: https://cran.r-project.org/package=RImpala
+  repository: https://github.com/Mu-Sigma/RImpala
+  version: 0.1.6
+  published: '2015-05-07'
+  maintainer: Vijay Raajaa <vijay.raajaa@mu-sigma.com>
+  sdk: false
+  description: Connect and execute distributed queries against Cloudera Impala from R.
+- name: Rdrools
+  registry: cran
+  language: R
+  official: true
+  url: https://cran.r-project.org/package=Rdrools
+  repository: https://github.com/Mu-Sigma/Rdrools
+  version: 1.1.1
+  published: '2018-12-08'
+  maintainer: Mu Sigma, Inc. <ird.experiencelab@mu-sigma.com>
+  sdk: false
+  description: An R interface to the Java-based Drools business rule management system.
+- name: netlogo-kafka-extension
+  registry: null
+  language: Java
+  official: true
+  url: https://github.com/Mu-Sigma/netlogo-kafka-extension
+  repository: https://github.com/Mu-Sigma/netlogo-kafka-extension
+  version: null
+  published: null
+  sdk: false
+  note: >-
+    Source-only. No package registry publishes this extension, so there is no metadata endpoint to
+    read a version or release date from — checked npm, PyPI and Maven Central, all absent.
+  description: A NetLogo extension for producing/consuming Apache Kafka topics from agent-based models.
+currency:
+  checked: '2026-08-26'
+  finding: >-
+    One of six first-party packages (HVT, 26.1.3, 2026-04-29) has shipped in the last two years.
+    The other four CRAN packages last released between 2015 and 2023.

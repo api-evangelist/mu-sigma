@@ -1,17 +1,36 @@
 aid: mu-sigma
 name: Mu Sigma
-description: 'Mu Sigma is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Mu Sigma is a decision sciences and AI services company founded in 2004, headquartered in
+  Northbrook, Illinois with its principal delivery centre in Bangalore, India, working with 140+
+  Fortune 500 clients across retail, pharma, financial services, manufacturing, energy, technology
+  and logistics. Its work is delivered as engagements and platforms rather than as a public
+  developer product: the Art of Problem Solving System (muAoPS), the Akashic Architecture
+  enterprise intelligence foundation, the muTalos agentic-AI ecosystem, Enablers of Confidence, and
+  a Continuous Service-as-a-Software operating model. Mu Sigma publishes no developer portal, no API
+  reference and no machine-readable API contract; its only public machine-readable engineering
+  output is a set of open-source R packages for decision science (HVT, muHVT, analysisPipelines,
+  RImpala, Rdrools) released to CRAN from the github.com/Mu-Sigma organization.
+image: https://www.mu-sigma.com/wp-content/uploads/2025/10/mu-small-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/mu-sigma/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Analytics
+- Data Science
+- Decision Sciences
+- Artificial Intelligence
+- Machine Learning
+- Consulting
+- Business Intelligence
+- Data Engineering
+- Professional Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,50 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.mu-sigma.com/
+- type: Blog
+  url: https://www.mu-sigma.com/blogs/
+- type: BlogRSS
+  url: https://www.mu-sigma.com/blogs/feed/
+- type: Support
+  url: https://www.mu-sigma.com/client-queries/
+- type: PrivacyPolicy
+  url: https://www.mu-sigma.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/Mu-Sigma
+- type: Packages
+  url: packages/mu-sigma-packages.yml
+- type: LLMsTxt
+  url: llms/mu-sigma-llms.txt
+- type: DomainSecurity
+  url: security/mu-sigma-domain-security.yml
+- type: Plans
+  url: plans/mu-sigma-plans-pricing.yml
+- type: SecondaryMarketListing
   url: https://forgeglobal.com/mu-sigma_stock/
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Mu Sigma sells decision-science engagements and delivered platforms (muAoPS, Akashic
+    Architecture, muTalos) with no developer program behind them — its 41-page WordPress site has no
+    developer, docs, API or pricing page at all, and every contract-discovery path probed on
+    www.mu-sigma.com and labs.mu-sigma.com missed, leaving the github.com/Mu-Sigma R packages as the
+    only machine-readable thing it publishes.
+  evidence:
+  - url: https://www.mu-sigma.com/openapi.json
+    status: 200
+  - url: https://www.mu-sigma.com/developers
+    status: 200
+  - url: https://labs.mu-sigma.com/openapi.json
+    status: 404
+  - url: https://www.mu-sigma.com/page-sitemap.xml
+    status: 200
+  - url: https://www.mu-sigma.com/llms.txt
+    status: 200
+  checked: '2026-08-26'

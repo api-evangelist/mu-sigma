@@ -1,0 +1,78 @@
+generated: '2026-08-26'
+method: probed
+source: direct HTTPS probes of every Mu Sigma host, 2026-08-26
+note: >-
+  NO /.well-known/ document is served on any Mu Sigma host. www.mu-sigma.com is a WordPress site whose
+  catch-all answers HTTP 200 with the full homepage HTML (349KB, <!DOCTYPE html>) for every unknown
+  path, including every /.well-known/* path — a soft-404, not a document. Each such response is
+  recorded below with status 200 and outcome soft-404 so the 200 is not mistaken for a hit. No
+  WellKnown or SecurityTxt pointer is emitted in apis.yml, because nothing was served.
+hosts:
+- host: www.mu-sigma.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    outcome: soft-404
+    file: null
+    note: returned the homepage HTML, not RFC 9116 text
+  - path: /.well-known/openid-configuration
+    status: 200
+    outcome: soft-404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    outcome: soft-404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 200
+    outcome: soft-404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    outcome: soft-404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 200
+    outcome: soft-404
+    file: null
+  - path: /.well-known/agent.json
+    status: 200
+    outcome: soft-404
+    file: null
+- host: labs.mu-sigma.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    outcome: absent
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    outcome: absent
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    outcome: absent
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    outcome: absent
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    outcome: absent
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    outcome: absent
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    outcome: absent
+    file: null
+excluded_hosts:
+- host: mu-sigma.ai
+  reason: >-
+    Not a Mu Sigma host. mu-sigma.ai resolves to a parked-domain placeholder whose own llms.txt says
+    "mu-sigma.ai is a domain name currently for sale"; it answers 200 with a 114-byte redirect shell
+    for every path including /.well-known/*. Excluded so its blanket 200s are never read as Mu Sigma
+    serving a well-known document.
