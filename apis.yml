@@ -11,6 +11,17 @@ description: >-
   reference and no machine-readable API contract; its only public machine-readable engineering
   output is a set of open-source R packages for decision science (HVT, muHVT, analysisPipelines,
   RImpala, Rdrools) released to CRAN from the github.com/Mu-Sigma organization.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.mu-sigma.com/wp-content/uploads/2025/10/mu-small-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/mu-sigma/refs/heads/main/apis.yml
 x-type: company
