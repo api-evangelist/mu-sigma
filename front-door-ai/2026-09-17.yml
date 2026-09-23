@@ -1,0 +1,33 @@
+# Front Door AI Index — mu-sigma — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: mu-sigma
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.mu-sigma.com
+  final_host: www.mu-sigma.com
+  ownership: own
+  owner: mu-sigma
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 30
+  host_score: 30
+  density: 13.33
+  words: 2251
+  tiers:
+    agentic: 5
+    core: 25
+    model: 0
+  ambiguous: 13
+  top_terms:
+    AI: 21
+    intelligence: 10
+    agentic: 5
+    automation: 2
+    ML: 1
+    artificial intelligence: 1
+    gen ai: 1
+    generative ai: 1
+    predictive: 1
