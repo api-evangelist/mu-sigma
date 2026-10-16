@@ -9,13 +9,6 @@
       "method": "discovered"
     },
     {
-      "source": "https://www.mu-sigma.com/",
-      "feed_url": "https://www.mu-sigma.com/blog/feed/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
-    },
-    {
       "source": "https://www.mu-sigma.com/blogs/feed/",
       "feed_url": "https://www.mu-sigma.com/blogs/feed/",
       "title": "",
@@ -38,5 +31,5 @@
     }
   ],
   "post_count": 12,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
